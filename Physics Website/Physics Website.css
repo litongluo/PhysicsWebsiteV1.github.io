@@ -1,0 +1,220 @@
+/* Basic Styling */
+* {
+  box-sizing: border-box;
+  border: none;
+  font-family: Arial, Verdana, sans-serif;
+  z-index: 5;
+}
+
+body {
+  background-color: rgb(231, 202, 132);
+  margin: 0;
+}
+
+
+h1, h2, h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  color: black;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 40px; 
+  text-align: center; 
+  margin: 10px; 
+  color: rgb(82, 41, 25);
+}
+h2 {
+  font-size: 30px; 
+  text-align: left;
+}
+h3 {
+  font-size: 30px; 
+  text-align: center;
+}
+h4 {
+  color: rgb(115, 0, 17);
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 2.5%;
+}
+
+
+p, ul, ol, span {
+  font-size: 22px;
+  color: black;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+span {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  margin-left: 2.5%;
+  font-size: 22px;
+}
+
+img {
+  height: 350px;
+  margin: 0px 30px;
+  background-color: white;
+}
+iframe {
+  border: 4px solid red;
+  height: 450px;
+  margin: 10px 30px;
+}
+
+
+/* Classes Format Styling */
+
+
+.equation {
+  background-color: lightgreen;
+  border: 5px solid forestgreen;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bigEquation {
+  font-size: 40px;
+}
+#lenzlaw {
+  padding: 20px;
+}
+
+
+
+.solution {
+  background-color: lightblue;
+  border: 5px solid turquoise;
+  border-radius: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.answer {
+  display: none;
+}
+
+
+
+.nav-buttons {  
+  color: rgb(133, 66, 40);
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+
+  letter-spacing: 0;
+  word-spacing: 0;
+  line-height: 1em;
+  text-align: center;
+
+  background-color: transparent;
+  padding: 1px 4px;
+  border: 8px ridge rgb(175, 89, 55);
+  border-radius: 0px;
+  margin: 0px 0px 10px;
+
+  display: inline-block;
+}
+.nav-buttons:hover {
+  color: rgb(231, 202, 132);
+  background-color: rgb(147, 74, 45);
+}
+
+
+/* Classes Position Styling */
+
+
+.centered {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.fixed {
+  position: fixed;
+  top: 0px;
+  background-color: hsl(42, 58.8%, 62.0%);
+  width: 100%;
+  z-index: 10;
+  border-bottom: 6px inset rgb(186, 94, 58);
+}
+#cookieAlert {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  background-color: hsl(42, 58.8%, 62.0%);
+  border-top: 6px inset rgb(186, 94, 58);
+  display: none;
+}
+#cookieAlertButton {
+  display: inline;
+  height: 30px;
+
+}
+.inline {
+  display: inline;
+}
+
+/* Table Styling */
+
+
+table {
+  color: black;
+  border-collapse: collapse;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+thead {
+  font-size: 22px;
+  text-align: center;
+}
+tbody {
+  font-size: 22px;
+  text-align: left;
+}
+td, th {
+  border: 2px solid black;
+  padding: 5px 5px;
+}
+
+
+/* Arrow Styles */
+
+
+.arrow {
+  border: solid;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}

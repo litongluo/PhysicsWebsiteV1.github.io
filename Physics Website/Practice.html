@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Practice</title>
+    <link href='Physics Website.css' rel='stylesheet'>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>MathJax = {tex: {inlineMath:[['$', '$'], ['\\(', '\\)']]},svg: {fontCache:'global'}};</script>
+    <script src="./Physics Website.js"></script>
+  </head>
+
+
+  <body>
+    <nav class="centered fixed">
+    <h1>Practice Problems</h1>
+      <a class="nav-buttons" href="./index.html">Introduction</a>
+      <a class="nav-buttons" href="./Faraday's Law.html">Faraday's Law</a>
+      <a class="nav-buttons" href="./Lenz's Law.html">Lenz's Law</a>
+      <a class="nav-buttons" href="./Practice.html">Practice</a>
+      <a class="nav-buttons" href="./Enrichment.html">Enrichment</a>
+      <a class="nav-buttons" href="./References.html">References/Credits</a>
+      <a class="nav-buttons" id="darkbutton">Dark Mode</a>
+      <script>document.getElementById("darkbutton").onclick = function(){ToggleMode()};</script>
+    </nav>
+    <div id="cookieAlert">
+      <p>This website uses simple localStorage "cookies" for functionality. Javascript web cookies are key-value data sets that are stored on your hard drive for a set period of time. They are commonly used to save user preferences. For example, on this website, a <em>userSettings</em> object stores your last dark or light mode preference in JavaScript's <em>localStorage</em>. Although cookies are often seen as annoying, they are highly useful; without cookies, you cannot autofill or return to a website you used previously without everything being reset all over again. And using cookies, this website knows not to show you this message every again - or until it expires.</p>
+      <p class="inline" style="margin-left: 2.5%">Anyways, by continuing on this webpage, you consent to these <em>functional</em> cookies.</p>
+      <button id="cookieAlertButton">Continue</button>
+      <script>document.getElementById("cookieAlertButton").onclick = function(){cookieAlertRemove()};</script>
+      <p></p>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    
+
+    <div class="solution">
+      <h2 class="centered">Challenge Question 1</h2>
+
+
+      <div class="centered"><img src="./Practice MEDIA/assembly_animation.gif"></div>
+
+
+      <p>A square coil of copper wire, with 12 loops and diameter 0.25 meters, is rotating inside a solenoid at an constant angular velocity of 1200 revolutions per minute. The strength of the magnetic field is a uniform 2 Tesla. Initially, the normal of the wire loop area is parallel to the magnetic field lines. The linear resistivity of the copper coil is 18 ohms per meter of wire at SATP.</p>
+        
+      <p>The observer, you, is looking horizontally straight at the setup. The axis of rotation of the loop is parallel to your line of sight and the loops appears to spin clockwise. The direction of the magnetic field is upward from your perspective.</p>
+      <p>(a) Find the function of EMF with respect to time.</p>
+      <p>(b) Find the initial direction of induced EMF (limit as $t \to 0^{+}$).</p>
+      <p>(c) Find the function of power with respect to time.</p>
+
+
+      <h4 id="button4_1">Show Solution <i class="arrow right"></i></h4>
+      <div class="answer" id="answer4_1">
+        <p>(a) Faraday's Law states that the magnitude of induced EMF is equal to the derivative of magnetic flux. But first, we need to find the function for magnetic flux using the flux formula:</p>
+
+
+        <span>\[  \Phi_{B} = \vec{B} \cdot \vec{A} = BA \cos{(\theta)}  \]</span>
+
+
+        <p>First consider that the loop is a 0.25-meter-wide square. The magnetic field inside the solenoid is a constant 2 Tesla. Finally, the angular velocity is 1200 revolutions per minute, giving us a revolution period of 0.05 seconds. Now we can construct our formula for magnetic flux:</p>
+
+        
+        <span>\[  \omega T = 2\pi \Rightarrow \omega = \frac{2\pi}{T} \]</span>
+
+
+        <span>\[   \omega = \frac{2\pi}{0.05} = 40 \pi \]</span>
+
+
+        <p>There is also an easier way:</p>
+
+
+        <span>\[   \omega = (2 \pi) \frac{1200}{60} = 40 \pi \]</span>
+
+
+        <p>Now that we have angular velocity, we just plug into the flux formula. Note that since </p>
+        
+        
+        <span>\[  \Phi_{B} = BA \cos{(\theta)}  \]</span>
+
+
+        <span>\[  \Phi_{B} = (2)(0.25)^{2} \cos{(40 \pi t)} = 0.125 \cos{(40 \pi t)}  \]</span>
+
+
+        <p>Apply Faraday's Law to find induced EMF magnitude:</p>
+
+
+        <span>\[  \varepsilon_{induced} = \frac{\mathrm{d} \Phi_{B}}{\mathrm{d} t} = \frac{\mathrm{d}}{\mathrm{d} t} (0.125 \cos{(40 \pi t)}) \]</span>
+
+
+        <span>\[  \varepsilon_{induced} = (0.125) (40 \pi) \cos{(40 \pi t)} \]</span>
+
+        <p>(b) To find the direction of the induced EMF (and therefore the direction of the induced current), refer to Lenz's Law. The question tells us that the normal of the wire loop area is parallel to the direction of magnetic field, meaning that upward magnetic flux is at a maximum at $t \to 0^{+}$. Since we know then that upward magnetic flux is decreasing, our induced EMF must point upward to oppose the decrease. Let us guess and check if the current runs clockwise from the top view - pointing our right thumb to the left at the 6 o'clock position of the top view gives us a clockwise current and a downward magnetic field. We need our magnetic field to point in the opposite direction (up) and so the current cannot run clockwise from the top view, but counterclockwise.</p>
+      </div>
+      <script>document.getElementById("button4_1").onclick = function(){ToggleDisplay("button4_1", "answer4_1")};</script>
+
+    
+      <h3>In Development. Coming Soon!</h3>
+
+
+    </div>
+  </body>
+
+
+  <footer>
+    <br>
+    <div class="centered"><a class="nav-buttons" href="#top">Jump back to top</a></div>
+  </footer>
+
+
+</html>
