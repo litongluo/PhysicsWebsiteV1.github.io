@@ -41,7 +41,7 @@
       <div class="centered"><img src="./Practice MEDIA/assembly_animation.gif"></div>
 
 
-      <p>A square coil of copper wire, with 12 loops and diameter 0.25 meters, is rotating inside a solenoid at an constant angular velocity of 1200 revolutions per minute. The strength of the magnetic field is a uniform 2 Tesla. Initially, the normal of the wire loop area is parallel to the magnetic field lines. The linear resistivity of the copper coil is 18 ohms per meter of wire at SATP.</p>
+      <p>A square coil of copper wire, with 12 loops and diameter 0.25 meters, is rotating inside a solenoid at an constant angular velocity of 1200 revolutions per minute. The strength of the magnetic field inside the solenoid is a uniform 2 Tesla. Initially, the normal of the wire loop area is parallel to the magnetic field lines. The linear resistivity of the copper coil is 18 ohms per meter of wire at SATP.</p>
         
       <p>The observer, you, is looking horizontally straight at the setup. The axis of rotation of the loop is parallel to your line of sight and the loops appears to spin clockwise. The direction of the magnetic field is upward from your perspective.</p>
       <p>(a) Find the function of EMF with respect to time.</p>
@@ -89,13 +89,34 @@
 
         <span>\[  \varepsilon_{induced} = (0.125) (40 \pi) \cos{(40 \pi t)} \]</span>
 
+
+        <p class="boxedAnswer">\[  \varepsilon_{induced} = 5 \pi \cos{(40 \pi t)} \]</p>
+
+
         <p>(b) To find the direction of the induced EMF (and therefore the direction of the induced current), refer to Lenz's Law. The question tells us that the normal of the wire loop area is parallel to the direction of magnetic field, meaning that upward magnetic flux is at a maximum at $t \to 0^{+}$. Since we know then that upward magnetic flux is decreasing, our induced EMF must point upward to oppose the decrease. Let us guess and check if the current runs clockwise from the top view - pointing our right thumb to the left at the 6 o'clock position of the top view gives us a clockwise current and a downward magnetic field. We need our magnetic field to point in the opposite direction (up) and so the current cannot run clockwise from the top view, but counterclockwise.</p>
+
+
+        <p>(c) By Joule's Law, we have $P = \frac{V^{2}}{R}$. We will reuse our answer from (a) since substituting $V(t) = \varepsilon (t)$ gives us $P(t) = \frac{[\varepsilon (t)]^{2}}{R}$. In Joule's Law, note that power is a positive value and the square factor of voltage makes negative voltages produce positive power.</p>
+
+
+        <span>\[  P(t) = \frac{[(0.125) (40 \pi) \cos{(40 \pi t)}]^{2}}{R} \]</span>
+
+
+        <span>\[  P(t) = \frac{25\pi^2 \cos^{2}{(40 \pi t)}}{R} \]</span>
+
+
+        <p>We get R by multiplying the linear resistivity of the wire by the length, like so:</p>
+
+
+        <span>\[  R = \lambda L = (18)[(0.25)(4)(12)] = 216 \Omega \]</span>
+
+
+        <p class="boxedAnswer">\[  P(t) = \left( \frac{25\pi^2}{216} \right) \cos^{2}{(40 \pi t)} \]</p>
+        
+        
+        <p></p>
       </div>
       <script>document.getElementById("button4_1").onclick = function(){ToggleDisplay("button4_1", "answer4_1")};</script>
-
-    
-      <h3>In Development. Coming Soon!</h3>
-
 
     </div>
   </body>

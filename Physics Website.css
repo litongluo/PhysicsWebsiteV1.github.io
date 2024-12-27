@@ -56,7 +56,7 @@ span {
 }
 
 a {
-  margin-left: 2.5%;
+  /*margin-left: 2.5%;*/
   font-size: 22px;
 }
 
@@ -87,6 +87,12 @@ iframe {
 }
 #lenzlaw {
   padding: 20px;
+}
+.boxedAnswer {
+  border: 3px solid black;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
