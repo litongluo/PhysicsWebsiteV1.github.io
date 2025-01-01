@@ -25,7 +25,7 @@
       <script>document.getElementById("darkbutton").onclick = function(){ToggleMode()};</script>
     </nav>
     <div id="cookieAlert">
-      <p>This website uses simple cookies for functionality. Javascript web cookies are key-value data sets that are stored on your hard drive for a set period of time. They are commonly used to save user preferences. For example, on this website, a <em>userSettings</em> object stores your last dark or light mode preference in JavaScript's <em>localStorage</em>. Although cookies are often seen as annoying, they are highly useful; without cookies, you cannot autofill or return to a website you used previously without everything being reset all over again. And using cookies, this website knows not to show you this message every again - or until it expires.</p>
+      <p>This website uses simple localStorage "cookies" for functionality. Javascript web cookies are key-value data sets that are stored on your hard drive for a set period of time. They are commonly used to save user preferences. For example, on this website, a <em>userSettings</em> object stores your last dark or light mode preference in JavaScript's <em>localStorage</em>. Although cookies are often seen as annoying, they are highly useful; without cookies, you cannot autofill or return to a website you used previously without everything being reset all over again. And using cookies, this website knows not to show you this message every again - or until it expires.</p>
       <p class="inline" style="margin-left: 2.5%">Anyways, by continuing on this webpage, you consent to these <em>functional</em> cookies.</p>
       <button id="cookieAlertButton">Continue</button>
       <script>document.getElementById("cookieAlertButton").onclick = function(){cookieAlertRemove()};</script>
@@ -50,7 +50,7 @@
         <tbody>
             <tr>
               <td class="centered">$\varepsilon$</td>
-              <td>Refers to the EMF, or electromotive force (it is not a real force). There are two kinds of EMF: voltage (electric) and induced EMF (magnetic). In Faraday's law, the EMF is called <em>induced EMF</em> since it is caused by a magnetic field. Both types of EMFs are measured in units of volts (V). One volt equals to one joule of energy carried per coulomb of charge.</td>
+              <td>Refers to the induced EMF, or electromotive force. EMF is measured in units of volts (V). One volt equals to one joule of energy carried per coulomb of charge.</td>
             </tr>
             <tr>
               <td class="centered">$\Phi$</td>
@@ -58,7 +58,7 @@
             </tr>
             <tr>
               <td class="centered">N</td>
-              <td>Refers to the <em>number</em> of wire coil loops around the area A. Restrictions are that N > 0, and the negative sign is a result of Lenz's Law, which will be explained in the following page. The variable N has no units and is just an integer. </td>
+              <td>Refers to the <em>number</em> of wire coil loops around the area A. The negative sign is a result of Lenz's Law, explained in page 3. The variable N is a unitless positive number, usually a whole number. </td>
             </tr>
             <tr>
               <td class="centered">t</td>
@@ -67,9 +67,12 @@
         </tbody>
     </table>
 
+    
+    <p>Firstly, what even is EMF? EMF usually refers to <strong>induced EMF</strong>. Despite literally being called the induced electromotive FORCE, it is not a real force; think of it like the magnetic counterpart of voltage. Voltage, or electric potential difference, is also not a force but a charge difference between two points that makes mobile charges move. A nonzero voltage causes an electric force to be applied on a charge. Think of EMF as a field effect where, when the amount of magnetic field lines inside an area is changing, the EMF becomes nonzero and causes charges to move via applying a magnetic force. So in summary, nonzero voltages and nonzero EMFs cause charges to move. Voltage and induced EMF produce similar physical effects. But the difference is how they occur: voltage is present when there is electric potential difference while EMFs are present when magnetic flux is changing. </p>
+
 
     <p>
-      Faraday's Law states that whenever the magnetic flux through a loop of conductor material (like wire) is changing, an incduced EMF will be created in wire. An EMF is a potential difference, or energy gradient similar to voltage, in the circuit loop that can cause a voltage to be present and current to run. Unlike voltage, however, there is no potential difference between any two points.
+      Faraday's Law states that whenever the magnetic flux through a loop of conductor material (like wire) is changing, an incduced EMF will be created in wire. An EMF is a potential, or energy gradient similar to voltage, in the circuit loop that can cause a voltage to be present and current to run. Unlike voltage, however, there is no potential difference between any two points since magnetic field lines are always loops! (remember Gauss's Law for Magnetism).
     </p>
 
 
@@ -131,6 +134,9 @@
     <div class="centered"><img src="./Faraday's Law MEDIA/wave_equation.jpg" alt="wave equation of light"></div>
 
 
+    <p>The electromagnetic wave equation was part of Albert Einstein's rationale for his theory of general relativity. Since the speed of light c is dependent on the the two permeability constants as shown by the formula $c = \frac{1}{\sqrt{\mu_{0} \epsilon_{0}}}$, the speed of light is universal. It is other quantities, like time and distance, that are not absolute but shaped by the environment.</p>
+    
+    
     <h2>Summary</h2>
     <ul>
       <li>Faraday's law states that the magnitude of induced EMF around a conductor loop is equal to the rate of change (derivative) of magnetic flux inside the coil.</li>
